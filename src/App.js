@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginSignup from './Components/LoginSignup/LoginSignup'; // Adjust the path if necessary
 import Dashboard from './Components/Dashboard/dashboard';
-import Option1 from './Components/Option1/Option1'; // Replace with your actual component
-import Option2 from './Components/Option2/Option2'; // Replace with your actual component
+import Games from './Components/Games/Games'; // Make sure the path is correct
+import Account from './Components/Account/Account'; // Make sure the path is correct
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/loginsignup" element={<LoginSignup />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/option1" element={<Games />} /> {/* Define these components */}
-        <Route path="/option2" element={<Account />} /> {/* Define these components */}
+        <Route path="/games" element={<Games />} />
+        <Route path="/account" element={<Account />} />
         {/* ... other routes */}
       </Routes>
     </Router>

@@ -12,6 +12,9 @@ const mockUser = {
 };
 
 const LoginSignup = () => {
+
+    console.log("LoginSignup is mounting");
+
     const [action, setAction] = useState("Log In");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
