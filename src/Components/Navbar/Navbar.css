@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #3c009d; /* Keep the header color */
+  }
+  
+  .nav-item {
+    padding: 10px 15px;
+    margin: 0 10px;
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #4c00b4; /* Slight variation for hover state */
+    cursor: pointer;
+  }
+  
