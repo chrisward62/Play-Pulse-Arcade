@@ -4,6 +4,7 @@
     align-items: center;
     padding: 10px;
     background: #3c009d; /* Keep the header color */
+    border-radius: 0 0 10px 10px;
   }
   
   .nav-item {
