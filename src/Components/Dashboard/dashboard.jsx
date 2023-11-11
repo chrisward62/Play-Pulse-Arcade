@@ -9,6 +9,7 @@ const Dashboard = () => {
             <TopNavigation /> {/* Updated component name */}
             <h1>Dashboard</h1>
             {/* The rest of your dashboard content will go here */}
+            <h2>Welcome back!</h2>
         </div>
     );
 }
