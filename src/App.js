@@ -5,6 +5,8 @@ import Dashboard from './Components/Dashboard/dashboard';
 import Games from './Components/Games/Games'; // Make sure the path is correct
 import Account from './Components/Account/Account'; // Make sure the path is correct
 import SnakeGame from './Components/snake-game/Snake-Game';
+import Wam from './Components/wam/wam';
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/account" element={<Account />} />
         <Route path="/snake-game" element={<SnakeGame />} />
+        <Route path="/wam" element={<Wam />} />
+
 
         {/* ... other routes */}
       </Routes>
