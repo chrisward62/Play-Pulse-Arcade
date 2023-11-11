@@ -1,0 +1,9 @@
+iframe {
+    border: none; /* This removes the border */
+}
+
+.snakegame-container {
+    text-align: center;
+    background: #f4f4f4;
+    min-height: 100vh;
+}

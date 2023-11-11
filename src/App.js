@@ -4,6 +4,7 @@ import LoginSignup from './Components/LoginSignup/LoginSignup'; // Adjust the pa
 import Dashboard from './Components/Dashboard/dashboard';
 import Games from './Components/Games/Games'; // Make sure the path is correct
 import Account from './Components/Account/Account'; // Make sure the path is correct
+import SnakeGame from './Components/snake-game/Snake-Game';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/games" element={<Games />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/snake-game" element={<SnakeGame />} />
+
         {/* ... other routes */}
       </Routes>
     </Router>
