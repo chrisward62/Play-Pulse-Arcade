@@ -6,6 +6,7 @@ import Games from './Components/Games/Games'; // Make sure the path is correct
 import Account from './Components/Account/Account'; // Make sure the path is correct
 import SnakeGame from './Components/snake-game/Snake-Game';
 import Wam from './Components/wam/wam';
+import TypingGame from './Components/Typing/Typing';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/snake-game" element={<SnakeGame />} />
         <Route path="/wam" element={<Wam />} />
+        <Route path="/Typing" element={<TypingGame />} />
 
 
         {/* ... other routes */}
