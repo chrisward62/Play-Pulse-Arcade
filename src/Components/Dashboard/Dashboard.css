@@ -4,4 +4,18 @@
     min-height: 100vh;
 }
 
-/* Add more styling as needed */
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* space between items */
+    padding: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
