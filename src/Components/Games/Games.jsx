@@ -28,6 +28,12 @@ const Games = () => {
             <img src="/typingHTML/typing.png" width="500px" height="500px" alt="Play Typing Game" />
             </Link>
 
+            <h2>Slide Game</h2>
+            <Link to="/Slide">
+
+            <img src="/slideHTML/slide.png" width="500px" height="500px" alt="Play Typing Game" />
+            </Link>
+
         </div>
     );
 }

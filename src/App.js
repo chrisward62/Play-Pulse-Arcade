@@ -7,6 +7,7 @@ import Account from './Components/Account/Account'; // Make sure the path is cor
 import SnakeGame from './Components/snake-game/Snake-Game';
 import Wam from './Components/wam/wam';
 import TypingGame from './Components/Typing/Typing';
+import SlideGame from './Components/Slide/Slide';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/snake-game" element={<SnakeGame />} />
         <Route path="/wam" element={<Wam />} />
         <Route path="/Typing" element={<TypingGame />} />
+        <Route path="/Slide" element={<SlideGame />} />
 
 
         {/* ... other routes */}
