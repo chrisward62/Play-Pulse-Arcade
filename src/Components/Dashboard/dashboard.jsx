@@ -3,10 +3,10 @@ import TopNavigation from '../TopNavigation/TopNavigation';
 import './Dashboard.css';
 
 const teamMembers = [
-    { name: 'Chris Ward', title: 'Website developer and game developer', image: '/pics/member1.jpg' },
-    { name: 'Trent Nguyen', title: 'Position', image: '/pics/member1.jpg' },
-    { name: 'Thomas Cuevas', title: 'Position', image: '/pics/member1.jpg' },
-    { name: 'Duc Ngo', title: 'Position', image: '/pics/member1.jpg' }
+    { name: 'Chris Ward', title: 'Website Developer and Game Developer', image: '/pics/member1.jpg' },
+    { name: 'Trent Nguyen', title: 'Game Developer', image: '/pics/member1.jpg' },
+    { name: 'Thomas Cuevas', title: 'Game Developer', image: '/pics/member1.jpg' },
+    { name: 'Duc Ngo', title: 'Game Developer', image: '/pics/member4.jpg' }
 ];
 
 const featured = [
