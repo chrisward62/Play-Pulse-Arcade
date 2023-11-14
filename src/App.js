@@ -9,6 +9,11 @@ import Wam from './Components/wam/wam';
 import TypingGame from './Components/Typing/Typing';
 import SlideGame from './Components/Slide/Slide';
 import CardGame from './Components/CardGame/CardGame';
+import Game2048 from './Components/2048/2048';
+import Tic from './Components/TTT/TTT';
+import Wordle from './Components/Wordle/Wordle';
+
+
 
 
 
@@ -25,6 +30,11 @@ function App() {
         <Route path="/Typing" element={<TypingGame />} />
         <Route path="/Slide" element={<SlideGame />} />
         <Route path="/CardGame" element={<CardGame />} />
+        <Route path="/2048" element={<Game2048 />} />
+        <Route path="/TTT" element={<Tic />} />
+        <Route path="/Wordle" element={<Wordle />} />
+
+
 
 
 

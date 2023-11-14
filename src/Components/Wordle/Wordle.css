@@ -1,0 +1,13 @@
+iframe {
+    border: none; /* This removes the border */
+}
+
+.wordle-container {
+    text-align: center;
+    background-color: #36013f;
+    min-height: 100vh;
+}
+
+.wordle-container h1{
+    color:azure;
+}

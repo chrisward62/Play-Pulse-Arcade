@@ -1,0 +1,9 @@
+iframe {
+    border: none; /* This removes the border */
+}
+
+.d2048-container {
+    text-align: center;
+    background: #ffffff;
+    min-height: 100vh;
+}

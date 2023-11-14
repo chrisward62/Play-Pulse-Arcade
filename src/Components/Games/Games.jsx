@@ -40,6 +40,24 @@ const Games = () => {
             <img src="/cardsHTML/cards.png" width="500px" height="500px" alt="Play Card Game" />
             </Link>
 
+            <h2>2048</h2>
+            <Link to="/2048">
+
+            <img src="/2048HTML/2048.png" width="500px" height="500px" alt="Play 2048" />
+            </Link>
+
+            <h2>Tic-Tac-Toe</h2>
+            <Link to="/TTT">
+
+            <img src="/tttHTML/ttt.png" width="500px" height="500px" alt="Play Tic-Tac-Toe" />
+            </Link>
+
+            <h2>Wordle</h2>
+            <Link to="/Wordle">
+
+            <img src="/wordleHTML/wordle.png" width="500px" height="500px" alt="Play Wordle" />
+            </Link>
+
         </div>
     );
 }
