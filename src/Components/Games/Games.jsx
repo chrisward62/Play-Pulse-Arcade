@@ -31,7 +31,13 @@ const Games = () => {
             <h2>Slide Game</h2>
             <Link to="/Slide">
 
-            <img src="/slideHTML/slide.png" width="500px" height="500px" alt="Play Typing Game" />
+            <img src="/slideHTML/slide.png" width="500px" height="500px" alt="Play Slide Game" />
+            </Link>
+
+            <h2>Card Game</h2>
+            <Link to="/CardGame">
+
+            <img src="/cardsHTML/cards.png" width="500px" height="500px" alt="Play Card Game" />
             </Link>
 
         </div>

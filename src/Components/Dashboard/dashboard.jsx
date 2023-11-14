@@ -9,6 +9,13 @@ const teamMembers = [
     { name: 'Duc Ngo', title: 'Position', image: '/pics/member1.jpg' }
 ];
 
+const featured = [
+    { name: 'Card Matching', image: '/cardsHTML/cards.png' },
+    { name: 'Futuristic Snake', image: '/snakeHTML/snake.png' },
+    { name: 'Sliding Game', image: '/slideHTML/slide.png' },
+    { name: 'Ghetto Whack-a-Mole', image: '/wamHTML/wam.png' }
+];
+
 const Dashboard = () => {
     console.log("Dashboard is mounting");
 
@@ -16,8 +23,22 @@ const Dashboard = () => {
         <div className="dashboard-container">
             <TopNavigation />
             <img src="/pics/Logo.png" alt="Logo" />
-            <h1>Dashboard</h1>
-            <h2>Welcome back!</h2>
+            <h1>Welcome back!</h1>
+            <h2>Featured games</h2>
+            <h3>Find more in the games section!</h3>
+
+            <div className="featured">
+                {featured.map(feature => (
+                    <div key={feature.name} className="feature">
+                        <img src={feature.image} alt={feature.name} />
+                        <h3>{feature.name}</h3>
+                    </div>
+                ))}
+            </div>
+
+            {/* Horizontal line */}
+            <hr />
+
             <h2>Meet our team!</h2>
             <div className="team-section">
                 {teamMembers.map(member => (

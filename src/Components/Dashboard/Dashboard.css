@@ -4,7 +4,7 @@
     min-height: 100vh;
 }
 
-.team-section {
+.team-section, .featured {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 20px; /* space between items */
@@ -16,6 +16,23 @@
 }
 
 .team-member img {
+    width: 80%; /* Adjust as needed */
+    height: auto;
+}
+
+.team-member, .feature {
+    text-align: center;
+}
+
+.feature img {
     width: 100%; /* Adjust as needed */
     height: auto;
+}
+
+hr {
+    border: 10;
+    height: 1px;
+    background: #474747; /* Or any color you prefer */
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
 }

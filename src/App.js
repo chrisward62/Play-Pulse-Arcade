@@ -8,6 +8,8 @@ import SnakeGame from './Components/snake-game/Snake-Game';
 import Wam from './Components/wam/wam';
 import TypingGame from './Components/Typing/Typing';
 import SlideGame from './Components/Slide/Slide';
+import CardGame from './Components/CardGame/CardGame';
+
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/wam" element={<Wam />} />
         <Route path="/Typing" element={<TypingGame />} />
         <Route path="/Slide" element={<SlideGame />} />
+        <Route path="/CardGame" element={<CardGame />} />
+
 
 
         {/* ... other routes */}

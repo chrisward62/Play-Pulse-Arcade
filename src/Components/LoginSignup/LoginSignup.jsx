@@ -43,6 +43,10 @@ const LoginSignup = () => {
 
     return (
         <div className='container'>
+            {/* Logo Image */}
+            <div className="logo-container">
+                <img src="/logo192.png" alt="Website logo" />
+            </div>
             <div className="header">
                 <div className="text">{action}</div>
                 <div className="underline"></div>
