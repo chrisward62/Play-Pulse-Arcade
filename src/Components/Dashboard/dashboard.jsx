@@ -5,7 +5,7 @@ import './Dashboard.css';
 const teamMembers = [
     { name: 'Chris Ward', title: 'Website Developer and Game Developer', image: '/pics/member1.jpg' },
     { name: 'Trent Nguyen', title: 'Website Developer and Game Developer', image: '/pics/member2.jpg' },
-    { name: 'Thomas Cuevas', title: 'Game Developer', image: '/pics/member1.jpg' },
+    { name: 'Thomas Cuevas', title: 'Game Developer', image: '/pics/member3.jpg' },
     { name: 'Duc Ngo', title: 'Game Developer', image: '/pics/member4.jpg' }
 ];
 
