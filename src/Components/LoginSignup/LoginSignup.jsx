@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginSignup.css';
-
-import user_icon from '../Assets/person.png';
-import email_icon from '../Assets/email.png';
-import password_icon from '../Assets/password.png';
-
-const mockUser = {
-    email: 'user@example.com',
-    password: 'password123', // In a real app, passwords would be hashed and managed securely
-};
+import { auth } from '../firebase';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 
 const LoginSignup = () => {
-
     console.log("LoginSignup is mounting");
 
     const [action, setAction] = useState("Log In");
+    const [username, setUsername] = useState(""); // State for username
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    const handleLogin = () => {
-        if (email === mockUser.email && password === mockUser.password) {
-            navigate('/dashboard'); // Navigate to the dashboard route on successful login
-        } else {
-            alert('Invalid credentials!'); // Replace with a more user-friendly error handling
+    const handleLogin = async () => {
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            navigate('/dashboard');
+        } catch (error) {
+            alert(error.message);
         }
     };
 
-    const handleSignup = () => {
-        // Here you'd handle the signup logic
-        alert('Signup logic not implemented.'); // Placeholder for signup logic
+    const handleSignup = async () => {
+        try {
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            // Update the user profile with the username as the display name
+            await updateProfile(userCredential.user, {
+                displayName: username
+            });
+            navigate('/dashboard');
+        } catch (error) {
+            alert(error.message);
+        }
     };
 
     const handleAction = () => {
@@ -43,7 +45,6 @@ const LoginSignup = () => {
 
     return (
         <div className='container'>
-            {/* Logo Image */}
             <div className="logo-container">
                 <img src="/logo192.png" alt="Website logo" />
             </div>
@@ -53,15 +54,8 @@ const LoginSignup = () => {
             </div>
 
             <div className="inputs">
-                {action !== "Log In" && (
-                    <div className="input">
-                        <img src={user_icon} alt="" />
-                        {/* You would also manage the name state similar to email and password */}
-                        <input type="text" placeholder="Name" />
-                    </div>
-                )}
+                
                 <div className="input">
-                    <img src={email_icon} alt="" />
                     <input 
                         type="email"
                         placeholder="E-Mail"
@@ -70,7 +64,6 @@ const LoginSignup = () => {
                     />
                 </div>
                 <div className="input">
-                    <img src={password_icon} alt="" />
                     <input 
                         type="password"
                         placeholder="Password"
@@ -82,7 +75,7 @@ const LoginSignup = () => {
 
             {action !== "Sign Up" && (
                 <div className="forgot-password">
-                    Lost Password? <span>Click Here</span>
+                    Lost Password?
                 </div>
             )}
 

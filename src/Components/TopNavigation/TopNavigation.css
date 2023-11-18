@@ -1,24 +1,39 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: #3c009d; /* Keep the header color */
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .nav-item {
-    padding: 10px 15px;
-    margin: 0 10px;
-    color: #fff; /* Text color */
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-item:hover {
-    background-color: #4c00b4; /* Slight variation for hover state */
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #3c009d; /* Keep the header color */
+  border-radius: 0 0 10px 10px;
+  position: relative; /* Add this to allow absolute positioning inside */
+}
+
+.nav-item {
+  padding: 10px 15px;
+  margin: 0 10px;
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #4c00b4; /* Slight variation for hover state */
+  cursor: pointer;
+}
+
+/* Additional CSS for logout button */
+.logout-button {
+  position: absolute; /* Position it absolute... */
+  right: 10px; /* ...from the right side */
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #fff; /* Text color */
+  font-size: 1em; /* Match the font size with other nav items */
+}
+
+.logout-button:hover {
+  background-color: #5c00c4; /* Change as needed */
+  cursor: pointer;
+}
