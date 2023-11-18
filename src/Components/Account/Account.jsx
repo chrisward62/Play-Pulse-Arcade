@@ -15,8 +15,7 @@ const Account = () => {
   }, []);
 
   const handleChangePassword = () => {
-    // You can implement a modal or redirect to a password change form
-    // For simplicity, let's just ask for the new password via a prompt
+    // ask for the new password via a prompt
     const newPassword = prompt("Please enter your new password:");
     if (newPassword) {
       const user = auth.currentUser;
