@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TopNavigation from '../TopNavigation/TopNavigation';
 import './Dashboard.css';
+import { auth } from '../firebase';
 
 const teamMembers = [
     { name: 'Chris Ward', title: 'Website Developer and Game Developer', image: '/pics/member1.jpg' },
@@ -17,13 +18,23 @@ const featured = [
 ];
 
 const Dashboard = () => {
+    const [userEmail, setUserEmail] = useState("");
+
+    useEffect(() => {
+        // Check if a user is logged in and set the email
+        const user = auth.currentUser;
+        if (user) {
+            setUserEmail(user.email);
+        }
+    }, []);
+
     console.log("Dashboard is mounting");
 
     return (
         <div className="dashboard-container">
             <TopNavigation />
             <img src="/pics/Logo.png" alt="Logo" />
-            <h1>Welcome back!</h1>
+            <h1>Welcome back{userEmail ? ` ${userEmail}` : ""}!</h1>
             <h2>Featured games</h2>
             <h3>Find more in the games section!</h3>
 
