@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate('/LoginSignup'); // or wherever you want to redirect after logging out
+      navigate('/LoginSignup'); 
     } catch (error) {
       console.error("Error signing out: ", error);
     }
